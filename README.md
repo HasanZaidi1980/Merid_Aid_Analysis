@@ -1,7 +1,7 @@
 # Merid_Aid_Analysis
 A data engineering and analytics pipeline that extracts IPEDS university data from Access databases to rank U.S. colleges based on merit aid generosity and affordability for middle-class families.
 
-College Merit Aid Analysis Pipeline
+## College Merit Aid Analysis Pipeline
 This project provides an automated way to identify high-value colleges by analyzing the IPEDS (Integrated Postsecondary Education Data System) dataset. It focuses on finding institutions that offer significant institutional grants (merit aid) relative to their sticker price.
 
 How it Works:

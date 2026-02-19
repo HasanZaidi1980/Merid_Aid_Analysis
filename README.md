@@ -7,23 +7,18 @@ This project provides an automated way to identify high-value colleges by analyz
 How it Works:
 The project consists of a two-stage pipeline:
 
-Data Extraction (CSV_Conversion.py): * Connects to the raw Microsoft Access Database (.accdb).
+1. Data Extraction (CSV_Conversion.py): Connects to the raw Microsoft Access Database (.accdb).
+- Converts complex relational tables into flat CSV files for processing.
 
-Converts complex relational tables into flat CSV files for processing.
+2. Data Analysis & Ranking (IPEDS_Merit_Aid_Analysis.py):
 
-Data Analysis & Ranking (IPEDS_Merit_Aid_Analysis.py):
+- Cleans and merges data across financial, admissions, and graduation tables.
+- Calculates the Merit Generosity Index (MGI).
+- Generates a ranked "Top 20" list of colleges based on a composite score of quality and cost.
+- Produces interactive visualizations (Dumbbell and Parallel Coordinates charts) using Plotly.
 
-Cleans and merges data across financial, admissions, and graduation tables.
-
-Calculates the Merit Generosity Index (MGI).
-
-Generates a ranked "Top 20" list of colleges based on a composite score of quality and cost.
-
-Produces interactive visualizations (Dumbbell and Parallel Coordinates charts) using Plotly.
-
-Tech Stack:
-Language: Python
-
-Libraries: Pandas, NumPy, Plotly, PyODBC
+## Tech Stack:
+- Language: Python
+- Libraries: Pandas, NumPy, Plotly, PyODBC
 
 Data Source: National Center for Education Statistics (NCES) IPEDS Database
